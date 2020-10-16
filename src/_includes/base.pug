@@ -1,0 +1,28 @@
+---
+title2: My First JAMstack Page!
+---
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title !{ title2 }
+    style.
+      body {
+        text-align: center;
+        background-color: #e5e5e5;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div.container {
+        width: 400px;
+        margin: 0 auto;
+      }
+      .love {
+        font-size: 4em;
+      }    
+  body
+    header
+      a(href="/") Index | 
+      a(href="/about") About
+    | !{ content }

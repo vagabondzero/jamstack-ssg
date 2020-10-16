@@ -1,0 +1,11 @@
+{
+  "name": "1-all-static",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "commit": "gitmoji -c",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  }
+}

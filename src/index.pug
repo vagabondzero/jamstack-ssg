@@ -7,4 +7,9 @@ layout: base
   h1 !{ title }
   .vibe JAMstack is awesome!
   .love ❤
+  ul
+    each article in news.articles
+      a(href= article.url): h2: li= article.title
+      span= article.source.name + ' - '
+      time= article.publishedAt
   script(src="./js/vibe.js")

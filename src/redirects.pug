@@ -1,0 +1,12 @@
+---
+permalink: "| _redirects"
+---
+
+|  /au/index.html  200  Language=au
+|
+
+each item in news
+    | / /#{ item.country }/index.html 200  Country=#{ item.country }
+    |
+
+| /   /br/index.html  404
